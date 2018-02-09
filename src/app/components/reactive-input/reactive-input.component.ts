@@ -25,10 +25,6 @@ export class ReactiveInputComponent implements OnInit {
 
   onInput(event: Event) {
     const name: string = (<HTMLInputElement>event.target).value;
-    if (name) {
-      this.name = name;
-    } else {
-      this.name = this.DEFAULT_NAME;
-    }
+    this.name = name ? name : this.DEFAULT_NAME;
   }
 }
