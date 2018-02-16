@@ -1,0 +1,10 @@
+<div class="form-group">
+  <button type="button"
+          class="btn btn-primary active"
+          id="accept-button"
+          ng-disabled="{{disabled}}"
+          (click)="onClick($event)"
+  >
+    <ng-content></ng-content>
+  </button>
+</div>

@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ReactiveInputComponent } from './components/reactive-input/reactive-input.component';
 import { ReactivePComponent } from './components/reactive-p/reactive-p.component';
+import { ReactiveButtonComponent } from './components/reactive-button/reactive-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReactiveInputComponent,
-    ReactivePComponent
+    ReactivePComponent,
+    ReactiveButtonComponent
   ],
   imports: [
     BrowserModule,
